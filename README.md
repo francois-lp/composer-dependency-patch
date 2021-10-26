@@ -13,15 +13,15 @@ __Project__
     $ git clone https://github.com/francois-lp/composer-dependency-patch
 ```
 ```
-	composer install
+    composer install
 ```
 
 __Dependencies__
 ```
-	composer require symfony/var-dumper
+    composer require symfony/var-dumper
 ```
 ```
-	composer require cweagans/composer-patches
+    composer require cweagans/composer-patches
 ```
 
 ## Getting started
@@ -52,7 +52,7 @@ __Patching steps__
 ```
 3. Patch application
 ```
-	composer update symfony/var-dumper
+    composer update symfony/var-dumper
 ```
 
 ## Links
