@@ -5,23 +5,16 @@
 ## Installation
 
 __Requirements__
- - PHP (>= 8.0.0)
- - Composer (>= 2.1.8)
+```
+    - PHP (>= 8.0.0)
+    - Composer (>= 2.1.8)
+```
 
 __Project__
 ```
     $ git clone https://github.com/francois-lp/composer-dependency-patch
-```
-```
-    composer install
-```
-
-__Dependencies__
-```
-    composer require symfony/var-dumper
-```
-```
-    composer require cweagans/composer-patches
+    $ cd composer-dependency-patch
+    $ composer install
 ```
 
 ## Getting started
@@ -40,7 +33,7 @@ __Patching steps__
     --- a/vendor/symfony/var-dumper/Dumper/HtmlDumper.php	2021-10-24 19:50:48.000000000 +0200
     +++ b/vendor/symfony/var-dumper/Dumper/HtmlDumper.php	2021-10-24 19:50:52.000000000 +0200
 ```
-2. Patch addition into composer.json
+3. Patch addition into composer.json
 ```json
     "extra": {
         "patches": {
@@ -50,7 +43,7 @@ __Patching steps__
         }
     }
 ```
-3. Patch application
+4. Patch application
 ```
     composer update symfony/var-dumper
 ```
